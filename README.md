@@ -55,3 +55,6 @@ never miss these wonderful materials.
 c. GPU Desmond is tremendously faster than the CPU version. GPU is strongly recommended.
 
 d. jobcontrol command from schrodinger is useful for job control.
+
+e. When merging molecules and proteins in the Maestro, different substructure id and name of molecules
+should be used in the mol2 file.
