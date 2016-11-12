@@ -7,7 +7,7 @@ MD exercise-DE Shaw 2011 JACS paper-How Does a Drug Molecule Find Its Target Bin
   a. Download the dasatinib structure file(Structure3D_CID_3062316.sdf) and the pp1 from PubChem and 
      download the 1y57 pdb file form PDB.
      
-  b. Although the paper used the Maestro to process the protein and ligand. I use Sybyl to
+  b. Although the paper used the Maestro to process the protein and ligand, I use Sybyl to
      convert sdf file to mol2 file and prepare the Src kinase. For detailed procedure,
      please refer to the Sybyl manual.
      
@@ -36,7 +36,7 @@ MD exercise-DE Shaw 2011 JACS paper-How Does a Drug Molecule Find Its Target Bin
   
   h. Load the amber-start.cms file to the Maestro and configure the Desmond according to the 
      JACS paper, such as NVT ensemble at 310K using the Nose-Hoover thermostat with a relaxation 
-     time of 1.0 ps, all bond lengths to H constrained using M-SHAKE, especially and the line 
+     time of 1.0 ps, all bond lengths to H constrained using M-SHAKE, especially add the line 
      backend = { force = { nonbond = { far = { type = gse n_k = [32 32 32] } } } } to the .cfg file.
   
   i. Write the .cms, .cfg and .msj files to the disk and transfer these files to the GPU node for MD
@@ -53,3 +53,5 @@ b. The manual or guide of gaussian, antechamber and desmond are really helpful, 
 never miss these wonderful materials.
 
 c. GPU Desmond is tremendously faster than the CPU version. GPU is strongly recommended.
+
+d. jobcontrol command from schrodinger is useful for job control.
