@@ -58,3 +58,6 @@ d. jobcontrol command from schrodinger is useful for job control.
 
 e. When merging molecules and proteins in the Maestro, different substructure id and name of molecules
 should be used in the mol2 file.
+
+f. J. Am. Chem. Soc., 2014, 136 (8), pp 3320–3320. Correction to How Does a Drug Molecule Find its 
+Target Binding Site?Only the kinase domain (residues 259− 533) was included in the simulations.
