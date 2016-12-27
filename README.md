@@ -1,6 +1,7 @@
-#ReproduceHowDoesDrugFindTargetBindingSite
+#Reproduce How Does Drug Find Target Binding Site
 ######Du, Yu writed at 2016-11-12 14:08:29
 ######MD exercise-DE Shaw 2011 JACS paper-How Does a Drug Molecule Find Its Target Binding Site
+
 1. Download the dasatinib structure file(Structure3D_CID_3062316.sdf) and the pp1 from PubChem and download the 1y57 pdb file form PDB.
 
 2. Although the paper used the Maestro to process the protein and ligand, I use Sybyl to convert sdf file to mol2 file and prepare the Src kinase. For detailed procedure, please refer to the Sybyl manual.
