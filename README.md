@@ -28,7 +28,8 @@
   * All bond lengths to H constrained using M-SHAKE
   * Especially add the line backend = { force = { nonbond = { far = { type = gse n_k = [32 32 32] } } } } to the .cfg file
   
-9. Write the .cms, .cfg and .msj files to the disk and transfer these files to the GPU node for MD computation. I use the command like the following, `env SCHRODINGER_CUDA_VISIBLE_DEVICES="0" multisim -JOBNAME final-md_pp1-3-400ns -HOST gpu-new -maxjob 1 -cpu 1 -m md_pp1-3-400ns.msj -c md_pp1-3-400ns.cfg -description "md_pp1-3-400ns" md_pp1-3-400ns.cms -set 'stage[1].set_family.md.jlaunch_opt=["-gpu"]' -o md_pp1-3-400ns-out.cms`
+9. Write the .cms, .cfg and .msj files to the disk and transfer these files to the GPU node for MD computation. I use the command like the following
+  * `env SCHRODINGER_CUDA_VISIBLE_DEVICES="0" multisim -JOBNAME final-md_pp1-3-400ns -HOST gpu-new -maxjob 1 -cpu 1 -m md_pp1-3-400ns.msj -c md_pp1-3-400ns.cfg -description "md_pp1-3-400ns" md_pp1-3-400ns.cms -set 'stage[1].set_family.md.jlaunch_opt=["-gpu"]' -o md_pp1-3-400ns-out.cms`
 
 #####NOTE: 
 * I can't figure out how to deal with the weak repulsive force between 6 dasatinib molecules. 
