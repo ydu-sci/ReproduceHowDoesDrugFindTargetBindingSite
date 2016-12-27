@@ -15,7 +15,7 @@
   * Add the frcmod para into gaff.dat, give it another name gaff.dat.das<br />`run -FROM desmond ff_amber_to_viparr.py -p gaff.dat -t dasatinib-sybyl.prepi DAS -f ligand`<br />Note: DAS is a folder that contains the template used by viparr.py
   
 4. Protein preparation
-  * Delete all water, hetatm and residues from 82 to 308. Side chain, cap termini, add H, fix sidechain amides
+  * Delete all water, hetatm and residues **not** from 259 to 533. Side chain, cap termini, add H, fix sidechain amides
   
 5. Use Maestro to build the dasanitib and Src system, I get folder desmond_setup_dasatinib
 
